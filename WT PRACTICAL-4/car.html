@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Car details</title> 
+<style> 
+div{ 
+border: 1px solid black; 
+border-radius: 10px; 
+background-color: #0a0a0a; 
+color: white; 
+} 
+h1{ 
+text-align: start; 
+color: white; 
+} 
+table, th, td { 
+align-content: center; 
+border: 1px solid black; 
+border-collapse: collapse; 
+color: ghostwhite; 
+} 
+th, td { 
+align-content: center; 
+padding: 5px; 
+text-align: left; 
+font: bold; 
+color: white; 
+} 
+img{ 
+place-items: center;
+border: 1px solid black; 
+border-radius: 10px; 
+} 
+table#t01 { 
+width: 100%;  
+background-color: #f1f1c1; 
+} 
+body{ 
+background-color: #0a0a0a; 
+} 
+</style> 
+</head> 
+<body> 
+    <center>
+        <h1><b><i><center>CAR DETAILS</center></i></b></h1> 
+<div> 
+<h2>TOYOTA FORTUNER</h2> 
+<img src="TOYOTA.jpeg" alt="Toyota Fortuner" height="250px"> 
+<div id="toyota"> 
+<br> 
+<input type="button" value="Toyota Details" 
+onmouseover="toyocar.displayToyotaDetails()"> 
+<br> 
+</div> 
+</div> 
+<br> 
+<div> 
+<h2>MARUTI SWIFT</h2> 
+<img src="SWIFT.jpeg" alt="Maruti Swift" height="250px"> 
+<div id="maruti"> 
+<br> 
+<input type="button" value="Maruti Details" 
+onmouseover="maruticar.displayMarutiDetails()"> 
+<br> 
+</div> 
+</div> 
+<br> 
+<div> 
+<h2>HYUNDAI VENUE</h2>
+<img src="HYUNDAI.jpeg" alt="Hyundai Venue" height="250px"> 
+<div id="hyundai"> 
+<br> 
+<input type="button" value="Hyundai Details" onmouseover="hyundaicar.displayHyundaiDetails()"> 
+<br> 
+</div> 
+</div> 
+<script src="CAR.js"></script> 
+</center>
+</body> 
+</html> 
