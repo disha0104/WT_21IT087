@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+h1 {
+border: 2px solid black;
+height: fit-content;
+width: 30vh;
+justify-content: center;
+margin: auto;
+padding: auto;
+align-items: center;
+border-radius: 20px;
+}
+*{
+    background: rgb(242, 240, 240);
+}
+form {
+width: 500px;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 4px;
+background-color: rgb(233, 226, 226);
+}
+label {
+margin-bottom: 8px;
+font-weight: bold;
+}
+input[type="text"],
+input[type="number"],
+select {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-bottom: 16px;
+resize: vertical;
+}
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background-color: #45a049;
+}
+.radio-group {
+display: flex;
+flex-direction: row;
+}
+.radio-group input[type="radio"] {
+margin-right: 8px;
+}
+</style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spoural</title>
+</head>
+<body>
+<h1><center>Spoural Registration</center></h1>
+<br>
+<div class="Frame">
+<form>
+<label for="type-of-event">Type of Event:</label><br><br>
+<select id="type-of-event" name="type-of-event">
+<option value="individual">Individual</option>
+<option value="group">Group</option>
+</select>
+<br><br>
+<label for="event-listing">Event Listing:</label><br><br>
+<select id="event-listing" name="event-listing">
+<option value="workshop1">Workshop 1</option>
+<option value="workshop2">Workshop 2</option>
+<option value="panel-discussion">Panel Discussion</option>
+<option value="networking">Networking</option>
+</select>
+<br><br>
+<label >Student ID:</label><br><br>
+<input type="text" id="StudentID" >
+<br><br>
+<label for="branch">Branch:</label>
+<input type="radio" id="CE" name="branch" value="CE"><label
+for="branch">CE</label>
+<input type="radio" name="branch" id="IT" value="IT"><label
+for="branch">IT</label>
+<input type="radio" name="branch" id="CS" value="CS"><label
+for="branch">CS</label>
+<input type="radio" name="branch" id="Pharmacy" value="Pharmacy"><label
+for="branch">Pharmacy</label>
+<input type="radio" name="branch" id="BSC" value="BSC"><label
+for="branch">BSC</label>
+<input type="radio" name="branch" id="MSC" value="MSC"><label
+for="branch">MSC</label>
+<br><br>
+<label for="contact-number">Contact Number:</label><br><br>
+<input type="text" id="contactNumber" name="contact-number">
+<br><br>
+<label for="department-name">Institute Name:</label><br>
+<input type="text" id="Institute" name="Institute">
+<br><br>
+<label for="semester">Semester:</label><br><br>
+<input type="number" id="semester" name="semester">
+<br><br>
+<center>
+<button type="submit" onclick="Vald()">SUBMIT</button>
+</center>
+</form>
+</div>
+<script src="3.js"></script>
+</body>
+</html>
